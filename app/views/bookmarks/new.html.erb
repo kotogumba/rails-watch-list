@@ -1,0 +1,7 @@
+<%= simple_form_for @bookmark do |f| %>
+  <%= f.input :url %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :tag_list, label: "Tags", hint: "Separate tags with commas" %>
+  <%= f.button :submit %>
+<% end %>

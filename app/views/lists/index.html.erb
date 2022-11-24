@@ -1,0 +1,20 @@
+<div class="banner">
+  <h2>Save any kind of movie</h2>
+  <p>Classic</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div>My Lists</div>
+      <%= @lists.each do |list| %>
+      <div class="list-card" style="background-image:;">
+        <%= list.name%>
+      </div>
+      <% end %>
+    </div>
+    <div class="col-4">
+      <div class="btn btn-success">Create movie list</div>
+    </div>
+  </div>
+</div>
